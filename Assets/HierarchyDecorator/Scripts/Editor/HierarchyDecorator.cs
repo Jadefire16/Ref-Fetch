@@ -8,6 +8,7 @@ namespace HierarchyDecorator
     internal static class HierarchyDecorator
     {
         public const string SETTINGS_TYPE_STRING = "Settings";
+        public const string SETTINGS_NAME_STRING = "Settings";
 
         private static Settings Settings;
 
@@ -86,7 +87,18 @@ namespace HierarchyDecorator
         {
             string path = null;
 
-            Settings settings = AssetUtility.FindOrCreateScriptable<Settings> (SETTINGS_TYPE_STRING, Constants.SETTINGS_ASSET_FOLDER);
+            // Make sure the key is still valid - no assuming that settings just 'exist'
+            if (EditorPrefs.HasKey (Constants.PREF_GUID))
+            {
+                path = AssetDatabase.GUIDToAssetPath (EditorPrefs.GetString (Constants.PREF_GUID));
+
+                if (AssetDatabase.GetMainAssetTypeAtPath (path) != null)
+                {
+                    return AssetDatabase.LoadAssetAtPath<Settings> (path);
+                }
+            }
+
+            Settings settings = AssetUtility.FindOrCreateScriptable<Settings> (SETTINGS_TYPE_STRING, SETTINGS_NAME_STRING, Constants.SETTINGS_ASSET_FOLDER);
             settings.SetDefaults (EditorGUIUtility.isProSkin);
 
             path = AssetDatabase.GetAssetPath (settings);
