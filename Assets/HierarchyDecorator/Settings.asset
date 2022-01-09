@@ -16,7 +16,7 @@ MonoBehaviour:
     showActiveToggles: 1
     showComponentIcons: 1
     showAllComponents: 0
-    twoToneBackground: 1
+    twoToneBackground: 0
     showLayers: 1
     editableLayers: 1
     applyChildLayers: 1
@@ -624,7 +624,10 @@ MonoBehaviour:
     - name: ExampleScriptWithIcon
       shown: 0
     customComponents:
-    - name: Check
+    - name: ExampleScript
+      shown: 1
+      script: {fileID: 11500000, guid: b771461054cbabe4ca2e59ef99138806, type: 3}
+    - name: ExampleScript
       shown: 1
       script: {fileID: 11500000, guid: ced824fa20219194b8e212260417e441, type: 3}
     unityVersion: 2019.4.28f1
