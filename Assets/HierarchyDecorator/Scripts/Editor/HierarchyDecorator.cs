@@ -86,17 +86,6 @@ namespace HierarchyDecorator
         {
             string path = null;
 
-            // Make sure the key is still valid - no assuming that settings just 'exist'
-            if (EditorPrefs.HasKey (Constants.PREF_GUID))
-            {
-                path = AssetDatabase.GUIDToAssetPath (EditorPrefs.GetString (Constants.PREF_GUID));
-
-                if (AssetDatabase.GetMainAssetTypeAtPath (path) != null)
-                {
-                    return AssetDatabase.LoadAssetAtPath<Settings> (path);
-                }
-            }
-
             Settings settings = AssetUtility.FindOrCreateScriptable<Settings> (SETTINGS_TYPE_STRING, Constants.SETTINGS_ASSET_FOLDER);
             settings.SetDefaults (EditorGUIUtility.isProSkin);
 

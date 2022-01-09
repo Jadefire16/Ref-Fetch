@@ -593,6 +593,12 @@ MonoBehaviour:
       shown: 0
     - name: TestResultRendererCallback
       shown: 0
+    - name: ExampleScript
+      shown: 0
+    - name: ExampleScript2
+      shown: 0
+    - name: ExampleScriptWithIcon
+      shown: 0
     - name: TMP_Dropdown
       shown: 0
     - name: TMP_InputField
@@ -616,12 +622,6 @@ MonoBehaviour:
     - name: TextContainer
       shown: 0
     - name: DropdownItem
-      shown: 0
-    - name: ExampleScript
-      shown: 0
-    - name: ExampleScript2
-      shown: 0
-    - name: ExampleScriptWithIcon
       shown: 0
     customComponents:
     - name: Check
