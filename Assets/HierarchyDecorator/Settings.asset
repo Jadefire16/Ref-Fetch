@@ -1,0 +1,631 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00668fd727de9bb4081a8a202ce24c3b, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  globalData:
+    showActiveToggles: 1
+    showComponentIcons: 1
+    showAllComponents: 0
+    twoToneBackground: 1
+    showLayers: 1
+    editableLayers: 1
+    applyChildLayers: 1
+  styleData:
+    displayLayers: 1
+    displayIcons: 1
+    styles:
+    - prefix: =
+      name: Header (Centered)
+      font: {fileID: 0}
+      fontSize: 11
+      fontAlignment: 4
+      fontStyle: 1
+      modes:
+      - fontColour: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+        backgroundColour: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
+      - fontColour: {r: 0, g: 0.98793554, b: 1, a: 1}
+        backgroundColour: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+      style:
+        m_Name: 
+        m_Normal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0.98793554, b: 1, a: 1}
+        m_Hover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Active:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Focused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnNormal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnHover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnActive:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnFocused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Border:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Margin:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Padding:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Overflow:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Font: {fileID: 0}
+        m_FontSize: 11
+        m_FontStyle: 1
+        m_Alignment: 4
+        m_WordWrap: 0
+        m_RichText: 1
+        m_TextClipping: 0
+        m_ImagePosition: 0
+        m_ContentOffset: {x: 0, y: 0}
+        m_FixedWidth: 0
+        m_FixedHeight: 0
+        m_StretchWidth: 1
+        m_StretchHeight: 0
+    - prefix: '-'
+      name: Subheader
+      font: {fileID: 0}
+      fontSize: 10
+      fontAlignment: 3
+      fontStyle: 1
+      modes:
+      - fontColour: {r: 0.245283, g: 0.245283, b: 0.245283, a: 1}
+        backgroundColour: {r: 0.7960785, g: 0.7960785, b: 0.7960785, a: 1}
+      - fontColour: {r: 0.0069625378, g: 1, b: 0, a: 1}
+        backgroundColour: {r: 0.2352941, g: 0.2352941, b: 0.2352941, a: 1}
+      style:
+        m_Name: 
+        m_Normal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0.0069625378, g: 1, b: 0, a: 1}
+        m_Hover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Active:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Focused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnNormal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnHover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnActive:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnFocused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Border:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Margin:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Padding:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Overflow:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Font: {fileID: 0}
+        m_FontSize: 10
+        m_FontStyle: 1
+        m_Alignment: 3
+        m_WordWrap: 0
+        m_RichText: 1
+        m_TextClipping: 0
+        m_ImagePosition: 0
+        m_ContentOffset: {x: 0, y: 0}
+        m_FixedWidth: 0
+        m_FixedHeight: 0
+        m_StretchWidth: 1
+        m_StretchHeight: 0
+    - prefix: +
+      name: Mini Header (Centered)
+      font: {fileID: 0}
+      fontSize: 10
+      fontAlignment: 4
+      fontStyle: 1
+      modes:
+      - fontColour: {r: 1, g: 1, b: 1, a: 1}
+        backgroundColour: {r: 0.38568, g: 0.6335747, b: 0.764151, a: 1}
+      - fontColour: {r: 1, g: 0, b: 0.80442667, a: 1}
+        backgroundColour: {r: 0.2671325, g: 0.4473481, b: 0.6509434, a: 1}
+      style:
+        m_Name: 
+        m_Normal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 1, g: 0, b: 0.80442667, a: 1}
+        m_Hover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Active:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Focused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnNormal:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnHover:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnActive:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_OnFocused:
+          m_Background: {fileID: 0}
+          m_ScaledBackgrounds: []
+          m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+        m_Border:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Margin:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Padding:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Overflow:
+          m_Left: 0
+          m_Right: 0
+          m_Top: 0
+          m_Bottom: 0
+        m_Font: {fileID: 0}
+        m_FontSize: 10
+        m_FontStyle: 1
+        m_Alignment: 4
+        m_WordWrap: 0
+        m_RichText: 1
+        m_TextClipping: 0
+        m_ImagePosition: 0
+        m_ContentOffset: {x: 0, y: 0}
+        m_FixedWidth: 0
+        m_FixedHeight: 0
+        m_StretchWidth: 1
+        m_StretchHeight: 0
+  componentData:
+    showMissingScriptsWarning: 0
+    unityComponents:
+    - name: NavMeshAgent
+      shown: 1
+    - name: NavMeshObstacle
+      shown: 1
+    - name: OffMeshLink
+      shown: 1
+    - name: Animator
+      shown: 1
+    - name: Animation
+      shown: 1
+    - name: AimConstraint
+      shown: 1
+    - name: PositionConstraint
+      shown: 1
+    - name: RotationConstraint
+      shown: 1
+    - name: ScaleConstraint
+      shown: 1
+    - name: LookAtConstraint
+      shown: 1
+    - name: ParentConstraint
+      shown: 1
+    - name: AudioSource
+      shown: 1
+    - name: AudioLowPassFilter
+      shown: 1
+    - name: AudioHighPassFilter
+      shown: 1
+    - name: AudioReverbFilter
+      shown: 1
+    - name: AudioBehaviour
+      shown: 0
+    - name: AudioListener
+      shown: 1
+    - name: AudioReverbZone
+      shown: 1
+    - name: AudioDistortionFilter
+      shown: 1
+    - name: AudioEchoFilter
+      shown: 1
+    - name: AudioChorusFilter
+      shown: 1
+    - name: Cloth
+      shown: 1
+    - name: Camera
+      shown: 1
+    - name: FlareLayer
+      shown: 1
+    - name: ReflectionProbe
+      shown: 1
+    - name: BillboardRenderer
+      shown: 1
+    - name: Renderer
+      shown: 0
+    - name: Projector
+      shown: 1
+    - name: TrailRenderer
+      shown: 1
+    - name: LineRenderer
+      shown: 1
+    - name: OcclusionPortal
+      shown: 1
+    - name: OcclusionArea
+      shown: 1
+    - name: LensFlare
+      shown: 1
+    - name: Light
+      shown: 1
+    - name: Skybox
+      shown: 1
+    - name: MeshFilter
+      shown: 1
+    - name: Halo
+      shown: 1
+    - name: LightProbeProxyVolume
+      shown: 1
+    - name: SkinnedMeshRenderer
+      shown: 1
+    - name: MeshRenderer
+      shown: 1
+    - name: LightProbeGroup
+      shown: 1
+    - name: LODGroup
+      shown: 1
+    - name: NetworkView
+      shown: 0
+    - name: Behaviour
+      shown: 0
+    - name: MonoBehaviour
+      shown: 0
+    - name: RectTransform
+      shown: 1
+    - name: Transform
+      shown: 1
+    - name: SpriteRenderer
+      shown: 1
+    - name: SortingGroup
+      shown: 1
+    - name: PlayableDirector
+      shown: 1
+    - name: Grid
+      shown: 1
+    - name: GridLayout
+      shown: 0
+    - name: ParticleSystem
+      shown: 1
+    - name: ParticleSystemRenderer
+      shown: 0
+    - name: ParticleSystemForceField
+      shown: 1
+    - name: Rigidbody
+      shown: 1
+    - name: Collider
+      shown: 0
+    - name: CharacterController
+      shown: 1
+    - name: MeshCollider
+      shown: 1
+    - name: CapsuleCollider
+      shown: 1
+    - name: BoxCollider
+      shown: 1
+    - name: SphereCollider
+      shown: 1
+    - name: ConstantForce
+      shown: 1
+    - name: Joint
+      shown: 0
+    - name: HingeJoint
+      shown: 1
+    - name: SpringJoint
+      shown: 1
+    - name: FixedJoint
+      shown: 1
+    - name: CharacterJoint
+      shown: 1
+    - name: ConfigurableJoint
+      shown: 1
+    - name: Rigidbody2D
+      shown: 1
+    - name: Collider2D
+      shown: 0
+    - name: CircleCollider2D
+      shown: 1
+    - name: CapsuleCollider2D
+      shown: 1
+    - name: EdgeCollider2D
+      shown: 1
+    - name: BoxCollider2D
+      shown: 1
+    - name: PolygonCollider2D
+      shown: 1
+    - name: CompositeCollider2D
+      shown: 1
+    - name: Joint2D
+      shown: 0
+    - name: AnchoredJoint2D
+      shown: 0
+    - name: SpringJoint2D
+      shown: 1
+    - name: DistanceJoint2D
+      shown: 1
+    - name: FrictionJoint2D
+      shown: 1
+    - name: HingeJoint2D
+      shown: 1
+    - name: RelativeJoint2D
+      shown: 1
+    - name: SliderJoint2D
+      shown: 1
+    - name: TargetJoint2D
+      shown: 1
+    - name: FixedJoint2D
+      shown: 1
+    - name: WheelJoint2D
+      shown: 1
+    - name: Effector2D
+      shown: 0
+    - name: AreaEffector2D
+      shown: 1
+    - name: BuoyancyEffector2D
+      shown: 1
+    - name: PointEffector2D
+      shown: 1
+    - name: PlatformEffector2D
+      shown: 1
+    - name: SurfaceEffector2D
+      shown: 1
+    - name: PhysicsUpdateBehaviour2D
+      shown: 0
+    - name: ConstantForce2D
+      shown: 1
+    - name: SpriteMask
+      shown: 1
+    - name: SpriteShapeRenderer
+      shown: 1
+    - name: StreamingController
+      shown: 1
+    - name: Terrain
+      shown: 1
+    - name: Tree
+      shown: 0
+    - name: TerrainCollider
+      shown: 1
+    - name: TextMesh
+      shown: 1
+    - name: Tilemap
+      shown: 1
+    - name: TilemapRenderer
+      shown: 1
+    - name: TilemapCollider2D
+      shown: 1
+    - name: CanvasGroup
+      shown: 1
+    - name: CanvasRenderer
+      shown: 1
+    - name: Canvas
+      shown: 1
+    - name: NetworkMatch
+      shown: 0
+    - name: VisualEffect
+      shown: 1
+    - name: VFXRenderer
+      shown: 0
+    - name: WorldAnchor
+      shown: 1
+    - name: WheelCollider
+      shown: 1
+    - name: VideoPlayer
+      shown: 1
+    - name: WindZone
+      shown: 1
+    - name: Check
+      shown: 0
+    - name: MyTestScript
+      shown: 0
+    - name: Button
+      shown: 1
+    - name: Dropdown
+      shown: 1
+    - name: Graphic
+      shown: 0
+    - name: GraphicRaycaster
+      shown: 1
+    - name: Image
+      shown: 1
+    - name: InputField
+      shown: 1
+    - name: AspectRatioFitter
+      shown: 1
+    - name: CanvasScaler
+      shown: 1
+    - name: ContentSizeFitter
+      shown: 1
+    - name: GridLayoutGroup
+      shown: 1
+    - name: HorizontalLayoutGroup
+      shown: 1
+    - name: HorizontalOrVerticalLayoutGroup
+      shown: 0
+    - name: LayoutElement
+      shown: 1
+    - name: LayoutGroup
+      shown: 0
+    - name: VerticalLayoutGroup
+      shown: 1
+    - name: Mask
+      shown: 1
+    - name: MaskableGraphic
+      shown: 0
+    - name: RawImage
+      shown: 1
+    - name: RectMask2D
+      shown: 1
+    - name: ScrollRect
+      shown: 1
+    - name: Scrollbar
+      shown: 1
+    - name: Selectable
+      shown: 1
+    - name: Slider
+      shown: 1
+    - name: Text
+      shown: 1
+    - name: Toggle
+      shown: 1
+    - name: ToggleGroup
+      shown: 1
+    - name: BaseMeshEffect
+      shown: 0
+    - name: Outline
+      shown: 1
+    - name: PositionAsUV1
+      shown: 1
+    - name: Shadow
+      shown: 1
+    - name: EventSystem
+      shown: 1
+    - name: EventTrigger
+      shown: 1
+    - name: BaseInput
+      shown: 0
+    - name: BaseInputModule
+      shown: 0
+    - name: PointerInputModule
+      shown: 0
+    - name: StandaloneInputModule
+      shown: 1
+    - name: TouchInputModule
+      shown: 1
+    - name: BaseRaycaster
+      shown: 0
+    - name: Physics2DRaycaster
+      shown: 1
+    - name: PhysicsRaycaster
+      shown: 1
+    - name: UIBehaviour
+      shown: 0
+    - name: DropdownItem
+      shown: 0
+    - name: SignalReceiver
+      shown: 1
+    - name: PlaymodeTestsController
+      shown: 0
+    - name: PlayModeRunnerCallback
+      shown: 0
+    - name: PlayerQuitHandler
+      shown: 0
+    - name: RemoteTestResultSender
+      shown: 0
+    - name: TestResultRendererCallback
+      shown: 0
+    - name: TMP_Dropdown
+      shown: 0
+    - name: TMP_InputField
+      shown: 0
+    - name: TMP_ScrollbarEventHandler
+      shown: 0
+    - name: TMP_SelectionCaret
+      shown: 0
+    - name: TMP_SpriteAnimator
+      shown: 0
+    - name: TMP_SubMesh
+      shown: 0
+    - name: TMP_SubMeshUI
+      shown: 0
+    - name: TMP_Text
+      shown: 0
+    - name: TextMeshPro
+      shown: 0
+    - name: TextMeshProUGUI
+      shown: 0
+    - name: TextContainer
+      shown: 0
+    - name: DropdownItem
+      shown: 0
+    - name: ExampleScript
+      shown: 0
+    - name: ExampleScript2
+      shown: 0
+    - name: ExampleScriptWithIcon
+      shown: 0
+    customComponents:
+    - name: Check
+      shown: 1
+      script: {fileID: 11500000, guid: ced824fa20219194b8e212260417e441, type: 3}
+    unityVersion: 2019.4.28f1
+    isDirty: 0
